@@ -1,4 +1,4 @@
-import logo from "@/public/logo.jpg";
+import blackLogo from "@/public/black-logo.svg";
 import Image from "next/image";
 
 export default function Header() {
@@ -22,8 +22,13 @@ export default function Header() {
             Контакты
           </a>
           <a href="/" className="m-1">
-            <span className="sr-only">BEST Ekaterinburg UrFU</span>
-            <Image src={logo} alt="logo" className="h-12 w-auto" />
+            <Image
+              src={blackLogo}
+              alt="BEST Logo"
+              width={100}
+              height={100}
+              className="fill-black"
+            />
           </a>
         </div>
       </nav>

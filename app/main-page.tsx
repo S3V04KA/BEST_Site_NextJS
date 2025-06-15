@@ -1,7 +1,7 @@
 import Banner from "@/public/banner.webp";
 import Board from "@/public/board.png";
 import Image from "next/image";
-import WhitePaperBackground from "@/public/white-paper-texture.png"
+import WhitePaperBackground from "@/public/white-paper-texture.png";
 
 export const MainPage = () => {
   return (
@@ -9,11 +9,11 @@ export const MainPage = () => {
       <Image
         src={Banner}
         alt="BEST Ekaterinburg UrFU Banner"
-        className="container"
+        className="container max-w-full h-auto"
       />
-      <div className="flex justify-around mr-14 ml-14">
-        <div className="items-center justify-center max-w-6/12 ml-12 mt-12">
-          <div className="w-3/4 m-8 items-center text-2xl">
+      <div className="relative z-10 flex max-w-screen justify-around mr-14 ml-14">
+        <div className="flex items-center justify-between max-w-5xl ">
+          <div className="items-center text-2xl">
             <p className="mt-5 mb-5">
               Board of European Students of Technology – <br /> это
               международная студенческая организация.
@@ -28,20 +28,21 @@ export const MainPage = () => {
               <br /> и развитие.
             </p>
           </div>
+          <Image
+            src={Board}
+            alt="Управляющий состав"
+            className="hidden lg:block max-w-full h-auto mt-12 mr-12"
+          />
+          {/* <div className="container absolute z-20 bottom-2 bg-[#1C1C1C] h-28 max-w-screen"></div> */}
         </div>
-        <Image src={Board} alt="Управляющий состав" className="mt-12 mr-12" />
       </div>
-      <div className="container rela bg-[#1C1C1C] min-h-96 w-full"></div>
-      <section className="relative min-h-3/4 w-full"
-      >
-        <Image
+
+      <Image
         src={WhitePaperBackground}
         alt="White Paper Background"
-        className="container"
-        >
-          
-        </Image>
-      </section>
+        className="container max-w-full h-auto"
+      >
+      </Image>
     </>
   );
 };
