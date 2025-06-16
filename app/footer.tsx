@@ -28,10 +28,10 @@ export const Footer = () => {
                 <a href="">Контакты</a>
               </li>
               <div className="flex mt-5">
-                <a href="" className="pr-2">
+                <a href="https://t.me/+c-2Jv_ESv-Y1MjQ6" target="blank" className="pr-2">
                   <Image src={TG} alt="VK icon" width={40} height={40} />
                 </a>
-                <a href="" className="pl-2">
+                <a href="https://vk.com/best_urfu" target="blank" className="pl-2">
                   <Image src={VK} alt="Telegram icon" width={40} height={40} />
                 </a>
               </div>
