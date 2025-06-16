@@ -13,19 +13,24 @@ export const Footer = () => {
           <div>
             <ul className="text-white dark:text-gray-400 font-normal">
               <li>
-                <a href="">О нас</a>
+                <a href="" className="bg-gradient-to-r from-current to-current bg-no-repeat bg-[length:0_1px] 
+              bg-left-bottom transition-[background-size] duration-250 hover:bg-[length:100%_2px]">О нас</a>
               </li>
               <li>
-                <a href="">Наши проекты</a>
+                <a href="" className="bg-gradient-to-r from-current to-current bg-no-repeat bg-[length:0_1px] 
+              bg-left-bottom transition-[background-size] duration-250 hover:bg-[length:100%_2px]">Наши проекты</a>
               </li>
               <li>
-                <a href="">Партнерам</a>
+                <a href="" className="bg-gradient-to-r from-current to-current bg-no-repeat bg-[length:0_1px] 
+              bg-left-bottom transition-[background-size] duration-250 hover:bg-[length:100%_2px]">Партнерам</a>
               </li>
               <li>
-                <a href="">Вопросы</a>
+                <a href="" className="bg-gradient-to-r from-current to-current bg-no-repeat bg-[length:0_1px] 
+              bg-left-bottom transition-[background-size] duration-250 hover:bg-[length:100%_2px]">Вопросы</a>
               </li>
               <li>
-                <a href="">Контакты</a>
+                <a href="" className="bg-gradient-to-r from-current to-current bg-no-repeat bg-[length:0_1px] 
+              bg-left-bottom transition-[background-size] duration-250 hover:bg-[length:100%_2px]">Контакты</a>
               </li>
               <div className="flex mt-5">
                 <a href="https://t.me/+c-2Jv_ESv-Y1MjQ6" target="blank" className="pr-2">
