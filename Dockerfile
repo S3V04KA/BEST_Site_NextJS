@@ -1,5 +1,5 @@
 # Base image for development
-FROM node:20-alpine AS development
+FROM node:20-alpine
 
 # Set working directory
 WORKDIR /app
@@ -20,25 +20,25 @@ EXPOSE 3000
 CMD ["npm", "run", "dev"]
 
 # Base image for production
-FROM node:20-alpine AS production
+# FROM node:20-alpine AS production
 
-# Set working directory
-WORKDIR /app
+# # Set working directory
+# WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+# # Copy package files
+# COPY package*.json ./
 
-# Install only production dependencies
-RUN npm install --only=production
+# # Install only production dependencies
+# RUN npm install --only=production
 
-# Copy the rest of the application
-COPY . .
+# # Copy the rest of the application
+# COPY . .
 
-# Build the application
-RUN npm run build
+# # Build the application
+# RUN npm run build
 
-# Expose port
-EXPOSE 3000
+# # Expose port
+# EXPOSE 3000
 
-# Start the production server
-CMD ["npm", "start"]
+# # Start the production server
+# CMD ["npm", "start"]
